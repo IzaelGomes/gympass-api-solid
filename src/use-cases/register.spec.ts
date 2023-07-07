@@ -1,5 +1,4 @@
-import { PrismaUsersRepository } from "@/repositories/prisma/prisma-users-repository"
-import { expect, test, describe, it } from "vitest"
+import { expect, describe, it } from "vitest"
 import { RegisterUseCase } from "./register"
 import { compare } from "bcryptjs"
 import { InMemoryUsersRepository } from "@/repositories/in-memory/in-memory-user-repository"
@@ -62,6 +61,5 @@ describe("Register Use Case", () => {
     
         }).rejects.toBeInstanceOf(userAlreadyExists)
 
- 
     })
 })
