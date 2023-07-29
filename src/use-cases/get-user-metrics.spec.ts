@@ -1,6 +1,4 @@
 import {beforeEach, describe, expect, it } from "vitest"
-import { hash } from "bcryptjs"
-import { ResourceNotFoundError } from "./erros/resource-not-found-error"
 import { getUserMetricsUseCase } from "./get-user-metrics"
 import { InMemoryCheckInsRepository } from "@/repositories/in-memory/in-memory-check-ins-repository"
 

@@ -11,7 +11,7 @@ GYMPASS STYPE APP.
 - [x] Deve ser possível obter o número de check-ins pelo o usuário logado;
 - [x] Deve ser possível o usuário obter seu histórico de check-ins;
 - [ ] Deve ser possível o usuário buscar academias próximas;
-- [ ] Deve ser possível o usuários academias pelo o nome;
+- [x] Deve ser possível o usuários academias pelo o nome;
 - [x] Deve ser possível o usuário realizar check-in em uma academia;
 - [x] Deve ser possível validar o check-in em uma academia;
 - [ ] Deve ser possível o usuário buscar academias próximas;
