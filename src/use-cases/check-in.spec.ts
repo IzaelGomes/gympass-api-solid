@@ -43,7 +43,7 @@ describe("check-in Use Case",() => {
             userId:"user-01",
             gymId:"gym-01", 
             userLatitude:-7.2343752, 
-            userLongitute:-39.3432483
+            userLongitude:-39.3432483
         })
 
         console.log(checkIn.created_at)
@@ -58,7 +58,7 @@ describe("check-in Use Case",() => {
             userId:"user-01",
             gymId:"gym-01", 
             userLatitude:-7.2343752, 
-            userLongitute:-39.3432483
+            userLongitude:-39.3432483
         })
 
 
@@ -67,7 +67,7 @@ describe("check-in Use Case",() => {
             gymId: "gym-01", 
             userId:"user-01", 
             userLatitude:-7.2343752, 
-            userLongitute:-39.3432483
+            userLongitude:-39.3432483
         })).rejects.toBeInstanceOf(MaxNumberOfCheckInsError)
     })
 
@@ -78,7 +78,7 @@ describe("check-in Use Case",() => {
             userId:"user-01",
             gymId:"gym-01", 
             userLatitude:-7.2343752, 
-            userLongitute:-39.3432483
+            userLongitude:-39.3432483
         })
 
         vi.setSystemTime(new Date(2022, 0, 21, 8, 0, 0))
@@ -87,7 +87,7 @@ describe("check-in Use Case",() => {
             userId:"user-01",
             gymId:"gym-01", 
             userLatitude:-7.2343752, 
-            userLongitute:-39.3432483
+            userLongitude:-39.3432483
         })
 
         expect(checkIn.id).toEqual(expect.any(String))
@@ -100,7 +100,7 @@ describe("check-in Use Case",() => {
             userId:"user-01",
             gymId:"gym-01", 
             userLatitude:-7.2343752, 
-            userLongitute:-39.3432483
+            userLongitude:-39.3432483
         })
 
         console.log(checkIn.created_at)
@@ -125,7 +125,7 @@ describe("check-in Use Case",() => {
                 userId:"user-01",
                 gymId:"gym-02", 
                 userLatitude:-7.2343752, 
-                userLongitute:-39.3432483
+                userLongitude:-39.3432483
             })).rejects.toBeInstanceOf(MaxDistanceError)
     })
 })
