@@ -2,6 +2,7 @@ import { InMemoryCheckInsRepository } from "@/repositories/in-memory/in-memory-c
 import { describe, expect, it, beforeEach, vi, afterEach } from "vitest"
 import { ValidadeCheckInUseCase } from "./validade-check-in"
 import { ResourceNotFoundError } from "./erros/resource-not-found-error"
+import { LateCheckInValidationError } from "./erros/late-check-ins-validation-error"
 
 
 
