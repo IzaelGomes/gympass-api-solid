@@ -14,7 +14,7 @@ GYMPASS STYPE APP.
 - [x] Deve ser possível o usuários academias pelo o nome;
 - [x] Deve ser possível o usuário realizar check-in em uma academia;
 - [x] Deve ser possível validar o check-in em uma academia;
-- [ ] Deve ser possível o usuário buscar academias próximas;
+- [x] Deve ser possível o usuário buscar academias próximas;
 - [x] Deve ser possível o cadastrar uma academia
 
  
