@@ -14,8 +14,6 @@ describe("validate Use Case",() => {
         checkInsRepository = new InMemoryCheckInsRepository()
         sut = new ValidadeCheckInUseCase(checkInsRepository)
 
-       
-
         vi.useFakeTimers()
     })
 
