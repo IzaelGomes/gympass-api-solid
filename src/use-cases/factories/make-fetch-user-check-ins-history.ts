@@ -1,10 +1,10 @@
 
-import { getUserMetricsUseCase } from "../get-user-metrics"
+import { FetchUserCheckInsHistoryUseCase } from "../fetch-user-check-ins-history"
 import { PrismaCheckInsRepository } from "@/repositories/prisma/prisma-check-ins-repository"
 
 export function makeUserCheckInsHistoryUseCase() {
     const checkInsRepository = new PrismaCheckInsRepository()
-    const useCase = new getUserMetricsUseCase(checkInsRepository)
+    const useCase = new FetchUserCheckInsHistoryUseCase(checkInsRepository)
 
     return useCase
 }   

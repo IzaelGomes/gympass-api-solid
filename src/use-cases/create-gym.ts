@@ -10,7 +10,6 @@ interface CreateGymUseCaseRequest {
 
 }
 
-
 interface  CreateGymUseCaseResponse {
     gym:Gym
 }
@@ -34,7 +33,6 @@ export class CreateGymUseCase {
             latitude, 
             longitude 
         })
-
 
         return {
             gym
