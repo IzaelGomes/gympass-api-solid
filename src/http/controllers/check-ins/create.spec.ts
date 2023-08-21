@@ -27,7 +27,7 @@ describe("Check-ins (e2e)", () => {
             }
         })
 
-        const response =  await request(app.server).post(`/gyms/${gym.id}/check-ins`)
+        const response =  await request(app.server).post(`/check-ins/${gym.id}/create`)
             .set("Authorization", `Bearer ${token}`)
             .send({
                 latitude:-7.2343752,
