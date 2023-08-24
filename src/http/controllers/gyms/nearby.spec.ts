@@ -39,23 +39,6 @@ describe("Gyms (e2e)", () => {
                 longitude:-39.3285508, 
             })
 
-        
-        // await gymsRepository.create({
-        //     title:"JavaScript Gym",
-        //     description: null, 
-        //     phone: null,
-        //     latitude:-7.2343752, 
-        //     longitude:-39.3432483, 
-        // })
-
-        // await gymsRepository.create({
-        //     title:"TypeScript Gym",
-        //     description: null, 
-        //     phone: null,
-        //     latitude:-7.2343752, 
-        //     longitude:-39.3432483, 
-        // })
-
 
         const response =  await request(app.server).get("/gyms/nearby").query({
             latitude: -7.227503,
