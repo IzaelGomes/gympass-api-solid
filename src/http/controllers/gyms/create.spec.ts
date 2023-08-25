@@ -16,7 +16,7 @@ describe("Gyms (e2e)", () => {
 
 
     it("should be able to create gym", async () => {
-        const {token} = await createAndAuthenticateUser(app)
+        const {token} = await createAndAuthenticateUser(app, true)
 
         const response =  await request(app.server).post("/gyms").set("Authorization", `Bearer ${token}`).send({
             latitude:-27.5453535,

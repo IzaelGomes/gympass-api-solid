@@ -16,13 +16,13 @@ describe("Refresh token (e2e)", () => {
 
     it("should be able to Refresh token", async() => {
         await request(app.server).post("/users").send({
-            name:"Derick", 
-            email:"derick@gmail.com", 
+            name:"izael", 
+            email:"izaelgtvc5@gmail.com", 
             password:"123456"
         })
 
         const authResponse = await request(app.server).post("/session").send({
-            email:"izaelgtvhc5@gmail.com", 
+            email:"izaelgtvc5@gmail.com", 
             password:"123456"
         })
 
@@ -31,8 +31,6 @@ describe("Refresh token (e2e)", () => {
         const response = await request(app.server).patch("/token/refresh").set("Cookie", cookies).send()
 
         
-
-
         expect(response.statusCode).toEqual(200)
         expect(response.body).toEqual({
             token:expect.any(String)
