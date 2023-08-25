@@ -5,8 +5,9 @@ export function verifyUserRole(roleToVerify: "ADMIN" | "MEMBER"){
         const {role} = request.user
 
         if(role !== roleToVerify) {
+            console.log("teste")
             return reply.status(401).send({message: "Unauthorized"})
         }
     }   
-   
+    
 }
