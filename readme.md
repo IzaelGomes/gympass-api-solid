@@ -1,7 +1,7 @@
 # App
 
 
-GYMPASS STYPE APP.
+GYMPASS STYPE APP (API).
 
 ## Rfs (Requisitos funcionais)
 
