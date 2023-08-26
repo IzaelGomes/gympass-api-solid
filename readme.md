@@ -24,8 +24,8 @@ GYMPASS STYPE APP.
 - [x]  O usuário não pode fazer 2 check-ins no mesmo dia;
 - [x]  O usuário não pode fazer check-in se não estiver perto (100m) da academia;
 - [x]  O ckeck-in só pode ser validado até 20 minutos após criado;
-- [ ]  O ckeck-in só pode ser validado pelo os administradores;
-- [ ]  A academia só pode ser cadastradas por administradores;
+- [x]  O ckeck-in só pode ser validado pelo os administradores;
+- [x]  A academia só pode ser cadastradas por administradores;
 
 
 ## RNfs (Requisitos não-funcionais)
@@ -33,4 +33,4 @@ GYMPASS STYPE APP.
 - [x] A senha do usuário precisa estar criptografada;
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [x] Todas listas de dados precisam estar paginadas com 20 itens por página;
-- [ ] O usuários deve ser identificado por um JWT ( JSON Web Token )
+- [x] O usuários deve ser identificado por um JWT ( JSON Web Token )
